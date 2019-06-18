@@ -41,10 +41,17 @@ body {
   position: absolute;
   top: 35px;
   left: 35px;
+    backface-visibility: hidden;
 }
 
 .logo {
   height: 60px;
+}
+
+.logo:hover {
+  animation: moveInFromRight;
+  animation-duration: 3s;
+  cursor: pointer;
 }
 
 .header-text-container {
@@ -59,6 +66,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-bottom: 50px;
 }
 
 .main-heading-large {
@@ -67,7 +75,7 @@ body {
   font-weight: 400;
   letter-spacing: 20px;
   animation-name: moveInFromTop;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 .main-heading-sub {
@@ -76,7 +84,9 @@ body {
   font-weight: 40px;
   letter-spacing: 15px;
   animation-name: moveInFromLeft;
-  animation-duration: 4s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes moveInFromLeft {
@@ -85,9 +95,9 @@ body {
     transform: translateX(-100px);
   }
 
-  40% {
+  /* 40% {
     transform: rotate(-180deg);
-  }
+  } */
 
   80% {
     transform: translate(10px);
@@ -109,4 +119,79 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+@keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    transform: rotate(-420deg);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.button:link, .button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+}
+
+.button:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
+
+.button:active {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+
+.white-button:link, .white-button:visited {
+  background-color: #fff;
+  color: #777;
+}
+
+.button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.8s;
+}
+
+.white-button::after {
+  background-color: #fff;
+}
+
+.button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.button-animated {
+  animation: moveInFromBottom 1s ease-out 5s;
+  animation-fill-mode: backwards;
 }
