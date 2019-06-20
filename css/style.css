@@ -23,51 +23,45 @@ body {
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-
-.header__logo-container {
-  position: absolute;
-  top: 3.5rem;
-  left: 3.5rem;
-  backface-visibility: hidden; }
-
-.header__logo {
-  height: 6rem; }
-
-.header__logo:hover {
-  animation: moveInFromRight;
-  animation-duration: 3s;
-  cursor: pointer; }
-
-.header__text-container {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .header__logo-container {
+    position: absolute;
+    top: 3.5rem;
+    left: 3.5rem;
+    backface-visibility: hidden; }
+  .header__logo {
+    height: 6rem; }
+  .header__logo:hover {
+    animation: moveInFromRight;
+    animation-duration: 3s;
+    cursor: pointer; }
+  .header__text-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .main-heading {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 5rem; }
-
-.main-heading--large {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 2rem;
-  animation-name: moveInFromTop;
-  animation-duration: 2s; }
-
-.main-heading--sub {
-  display: block;
-  font-size: 4rem;
-  font-weight: 4rem;
-  letter-spacing: 1.5rem;
-  animation-name: moveInFromLeft;
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-fill-mode: backwards; }
+  .main-heading--large {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    animation-name: moveInFromTop;
+    animation-duration: 2s; }
+  .main-heading--sub {
+    display: block;
+    font-size: 4rem;
+    font-weight: 4rem;
+    letter-spacing: 1.5rem;
+    animation-name: moveInFromLeft;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards; }
 
 @keyframes moveInFromLeft {
   0% {
@@ -119,14 +113,19 @@ body {
   transform: translateY(-1rem);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   font-size: 2rem; }
+  .button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .button:active {
   transform: translateY(-0.5rem);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); }
 
-.button--white:link, .button--white:visited {
+.button--white {
   background-color: #fff;
   color: #008080; }
+  .button--white::after {
+    background-color: #fff; }
 
 .button::after {
   content: "";
@@ -140,13 +139,6 @@ body {
   z-index: -1;
   transition: all 0.8s; }
 
-.button--white::after {
-  background-color: #fff; }
-
-.button:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
-
-.button--animated {
+.button .button--animated {
   animation: moveInFromBottom 1s ease-out 5s;
   animation-fill-mode: backwards; }
