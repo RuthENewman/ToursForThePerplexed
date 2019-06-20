@@ -1,24 +1,12 @@
-/* COLOURS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-orange/yellow?
-
-*/
-
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -26,53 +14,42 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(164, 251, 237,0.7),
-    rgba(0, 255, 226, 0.7)),
-  url('../images/hero.jpg');
+  background-image: linear-gradient(to right bottom, rgba(164, 251, 237, 0.7), rgba(0, 255, 226, 0.7)), url("../images/hero.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
 
 .header__logo-container {
   position: absolute;
   top: 3.5rem;
   left: 3.5rem;
-  backface-visibility: hidden;
-}
+  backface-visibility: hidden; }
 
 .header__logo {
-  height: 6rem;
-}
+  height: 6rem; }
 
 .header__logo:hover {
   animation: moveInFromRight;
   animation-duration: 3s;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .header__text-container {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-}
+  text-align: center; }
 
 .main-heading {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 5rem;
-}
+  margin-bottom: 5rem; }
 
 .main-heading--large {
   display: block;
@@ -80,8 +57,7 @@ body {
   font-weight: 400;
   letter-spacing: 2rem;
   animation-name: moveInFromTop;
-  animation-duration: 2s;
-}
+  animation-duration: 2s; }
 
 .main-heading--sub {
   display: block;
@@ -91,63 +67,43 @@ body {
   animation-name: moveInFromLeft;
   animation-duration: 3s;
   animation-delay: 2s;
-  animation-fill-mode: backwards;
-}
+  animation-fill-mode: backwards; }
 
 @keyframes moveInFromLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
-  }
-
+    transform: translateX(-10rem); }
   /* 40% {
     transform: rotate(-180deg);
   } */
-
   80% {
-    transform: translate(1rem);
-  }
-
+    transform: translate(1rem); }
   100% {
     opacity: 1;
-    transform: translate(0);
-  }
-}
+    transform: translate(0); } }
 
 @keyframes moveInFromTop {
   0% {
     opacity: 0;
-    transform: translateY(-10rem);
-  }
-
+    transform: translateY(-10rem); }
   100% {
     opacity: 1;
-    transform: translate(0);
-  }
-}
+    transform: translate(0); } }
 
 @keyframes moveInFromRight {
   0% {
     opacity: 0;
-    transform: rotate(-420deg);
-  }
-
+    transform: rotate(-420deg); }
   100% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes moveInFromBottom {
   0% {
     opacity: 0;
-    transform: translateY(10rem);
-  }
-
+    transform: translateY(10rem); }
   100% {
     opacity: 1;
-    transform: translate(0);
-  }
-}
+    transform: translate(0); } }
 
 .button:link, .button:visited {
   text-transform: uppercase;
@@ -157,24 +113,20 @@ body {
   display: inline-block;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem;
-}
+  font-size: 1.6rem; }
 
 .button:hover {
   transform: translateY(-1rem);
-  box-shadow: 0 10px 20px rgba(0,0,0,.5);
-  font-size: 2rem;
-}
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  font-size: 2rem; }
 
 .button:active {
   transform: translateY(-0.5rem);
-  box-shadow: 0 10px 10px rgba(0,0,0,.2);
-}
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); }
 
 .button--white:link, .button--white:visited {
   background-color: #fff;
-  color: #008080;
-}
+  color: #008080; }
 
 .button::after {
   content: "";
@@ -186,19 +138,15 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.8s;
-}
+  transition: all 0.8s; }
 
 .button--white::after {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .button:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
+  opacity: 0; }
 
 .button--animated {
   animation: moveInFromBottom 1s ease-out 5s;
-  animation-fill-mode: backwards;
-}
+  animation-fill-mode: backwards; }
