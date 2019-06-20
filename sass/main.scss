@@ -1,6 +1,10 @@
 $colour-primary: #52fde8;
 $colour-primary-light: #a4fbed;
 $colour-primary-dark: #00ffe2;
+$colour-primary-extra-dark: #008080;
+$colour-grey-dark: #777;
+$colour-white: #fff;
+
 
 *,
 *::after,
@@ -18,7 +22,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
+  color: $colour-grey-dark;
   padding: 3rem;
   box-sizing: border-box;
 }
@@ -62,7 +66,7 @@ body {
 }
 
 .main-heading {
-  color: #fff;
+  color: $colour-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 5rem;
@@ -166,8 +170,8 @@ body {
 }
 
 .button--white:link, .button--white:visited {
-  background-color: #fff;
-  color: #008080;
+  background-color: $colour-white;
+  color: $colour-primary-extra-dark;
 }
 
 .button::after {
@@ -184,7 +188,7 @@ body {
 }
 
 .button--white::after {
-  background-color: #fff;
+  background-color: $colour-white;
 }
 
 .button:hover::after {
