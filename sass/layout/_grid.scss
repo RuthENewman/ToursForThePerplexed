@@ -7,7 +7,14 @@
     margin-bottom: $vertical-margin;
   }
 
+  @include clearfix;
+
   .col-1-of-2 {
-    
+    width: calc((100% - #{$vertical-margin}) / 2);
+    background-color: orangered;
+
+    &:not(:last-child) {
+      margin-right: $horizontal-margin;
+    }
   }
 }
