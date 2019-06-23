@@ -56,3 +56,23 @@ body {
     text-shadow: .5rem 1rem 2rem rgba($colour-black, .2);
   }
 }
+
+.tertiary-heading {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.para {
+  font-size: $default-font-size;
+
+  li {
+    font-size: $default-font-size;
+    margin-left: 3rem;
+
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1.8rem;
+  }
+}
