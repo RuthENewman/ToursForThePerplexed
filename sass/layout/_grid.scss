@@ -40,4 +40,8 @@
   .col-3-of-4 {
     width: calc(3 * ((100% - 3 * #{$horizontal-margin}) / 4) + (2 * #{$horizontal-margin}));
   }
+
+  .col-1-of-6 {
+      width: calc((100% - 5 * #{$horizontal-margin}) / 6);
+  }
 }
