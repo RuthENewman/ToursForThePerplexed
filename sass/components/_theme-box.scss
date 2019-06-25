@@ -1,0 +1,25 @@
+.theme-box {
+  background-color: rgba($colour-white, .8);
+  font-size: 1.5rem;
+  padding: 1rem 1.8rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba($colour-black, .15);
+  transition: transition .3s;
+
+  &__icon {
+      font-size: 5rem;
+      margin: .1rem;
+      display: inline-block;
+      background-image: -webkit-linear-gradient(left, $colour-primary-light, $colour-primary-dark);
+      background-image: -o-linear-gradient(left, $colour-primary-light, $colour-primary-dark);
+      background-image: linear-gradient(to left top, $colour-primary-light, $colour-primary-dark);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

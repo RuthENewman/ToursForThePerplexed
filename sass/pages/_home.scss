@@ -1,5 +1,16 @@
 .about-section {
   background-color: $color-grey-light;
-  padding: 20rem 0;
+  padding: 20rem 0 10rem 0;
   margin-top: -20vh;
+}
+
+.theme-section {
+  padding: 10rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($colour-primary-light, 0.7),
+    rgba($colour-primary-dark, 0.7)),
+  url('../images/larger-geometric-art.jpg');
+  background-size: cover;
+
 }
