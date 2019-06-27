@@ -120,6 +120,12 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-large {
+  margin-top: 8rem; }
+
+.u-margin-top-very-large {
+  margin-top: 10rem; }
+
 .button:link, .button:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -147,6 +153,12 @@ body {
   color: #008080; }
   .button--white::after {
     background-color: #fff; }
+
+.button--green {
+  background-color: #52fde8;
+  color: #fff; }
+  .button--green::after {
+    background-color: #52fde8; }
 
 .button::after {
   content: "";
@@ -236,9 +248,9 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 55rem; }
   .card__side {
-    height: 52rem;
+    height: 55rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -289,7 +301,8 @@ body {
     .card__heading-span-3 {
       background-image: linear-gradient(to right bottom, rgba(188, 78, 156, 0.85), rgba(255, 119, 48, 0.85)); }
   .card__details {
-    padding: 3rem; }
+    text-align: center;
+    padding: 2rem; }
     .card__details ul {
       list-style: none;
       width: 80%;
@@ -300,6 +313,47 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__similar {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    background-image: linear-gradient(to right bottom, rgba(188, 78, 156, 0.85), rgba(255, 119, 48, 0.85));
+    color: #fff; }
+    .card__similar--details {
+      position: relative; }
+      .card__similar--details ul {
+        list-style: none;
+        position: absolute;
+        top: 3rem;
+        left: 4rem; }
+        .card__similar--details ul li {
+          background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+          color: #fff;
+          border-radius: 0.4rem;
+          margin-bottom: 1.2rem;
+          text-align: left;
+          font-size: 1.6rem;
+          padding: .5rem; }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 0.4rem;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem; }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: orangered;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem); }
 
 .row {
   max-width: 130rem;
@@ -374,5 +428,9 @@ body {
 
 .faves-section {
   background-color: #f7f7f7;
-  padding: 20rem 0 20rem 0;
+  padding: 15rem 0 10rem 0;
   margin-top: -9rem; }
+
+.stories-section {
+  padding: 10rem 0;
+  background-color: #f7f7f7; }

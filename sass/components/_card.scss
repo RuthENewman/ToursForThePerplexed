@@ -2,10 +2,10 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
+  height: 55rem;
 
   &__side {
-    height: 52rem;
+    height: 55rem;
 
     transition: all .8s ease;
     position: absolute;
@@ -100,7 +100,8 @@
   }
 
   &__details {
-      padding: 3rem;
+      text-align: center;
+      padding: 2rem;
       ul {
         list-style: none;
         width: 80%;
@@ -116,5 +117,41 @@
           }
         }
       }
+  }
+
+  &__similar {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    background-image: linear-gradient(to right bottom,
+    rgba($colour-tertiary-light, .85),
+    rgba($colour-secondary-dark, .85));
+    color: $colour-white;
+
+      &--details {
+        position: relative;
+
+        ul {
+          list-style: none;
+          position: absolute;
+          top: 3rem;
+          left: 4rem;
+
+            li {
+              background-image: linear-gradient(to right bottom,
+              rgba($colour-secondary-light, .85),
+              rgba($colour-secondary-dark, .85));
+              color: $colour-white;
+              border-radius: $radius-small;
+              margin-bottom: $horizontal-margin;
+              text-align: left;
+              font-size: $default-font-size;
+              padding: .5rem;
+            }
+        }
+
+    }
+
+
   }
 }
