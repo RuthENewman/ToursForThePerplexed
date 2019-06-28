@@ -335,11 +335,24 @@ body {
           font-size: 1.6rem;
           padding: .5rem; }
 
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .4; }
+  .background-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .story {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 0.5rem;
   padding: 6rem;
   padding-left: 9rem;
@@ -438,4 +451,4 @@ body {
 
 .stories-section {
   padding: 1rem 0;
-  background-color: #f7f7f7; }
+  position: relative; }
