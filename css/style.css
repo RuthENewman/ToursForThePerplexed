@@ -374,7 +374,7 @@ body {
     transform: skewX(12deg); }
 
 .form__details:not(:last-child) {
-  margin-bottom: 2rem; }
+  margin-bottom: 5rem; }
 
 .form__input {
   font-size: 1.6rem;
@@ -382,7 +382,7 @@ body {
   color: inherit;
   padding: 2rem;
   border-radius: 0.4rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   border: none;
   width: 90%;
   display: block;
@@ -401,7 +401,7 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   margin-left: 2rem;
-  margin-top: .7rem;
+  margin-top: 1rem;
   display: block;
   transition: all .3s; }
 
@@ -495,11 +495,11 @@ body {
   background-image: linear-gradient(to right bottom, #a4fbed, #00ffe2); }
 
 .booking {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url("../images/batumi-feast.jpg");
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 52%), url("../images/chinesecalligraphy.jpg");
   background-size: 100%;
   border-radius: 0.5rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  height: 50rem; }
+  height: 60rem; }
   .booking__form {
     width: 55%;
     padding: 3rem 6rem; }
