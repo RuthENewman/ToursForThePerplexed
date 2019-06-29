@@ -374,7 +374,7 @@ body {
     transform: skewX(12deg); }
 
 .form__details:not(:last-child) {
-  margin-bottom: 5rem; }
+  margin-bottom: 2rem; }
 
 .form__input {
   font-size: 1.6rem;
@@ -401,11 +401,11 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   margin-left: 2rem;
-  margin-top: 1rem;
+  margin-top: .3rem;
   display: block;
   transition: all .3s; }
 
-.form__input:placeholder-shown + .form __label {
+.form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem); }
@@ -502,4 +502,4 @@ body {
   height: 60rem; }
   .booking__form {
     width: 55%;
-    padding: 3rem 6rem; }
+    padding: 3rem 4rem; }
