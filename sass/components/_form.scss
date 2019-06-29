@@ -1,0 +1,39 @@
+.form {
+
+    &__details:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &__input {
+      font-size: $default-font-size;
+      font-family: inherit;
+      color: inherit;
+      padding: 2rem;
+      border-radius: $radius-small;
+      background-color: rgba($colour-white, .5);
+      border: none;
+      width: 90%;
+      display: block;
+      transition: all .3s;
+
+      &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($colour-black, .1);
+            border-bottom: 3px solid $colour-primary;
+      }
+
+
+      &:focus:invalid {
+        border-bottom: 3px solid $colour-secondary-dark;
+      }
+
+      &::-wekit-input-placeholder {
+        color: $colour-grey-dark-2;
+      }
+    }
+
+    &__label {
+
+    }
+
+}

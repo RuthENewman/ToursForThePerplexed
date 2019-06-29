@@ -373,6 +373,29 @@ body {
   .story__text {
     transform: skewX(12deg); }
 
+.form__details:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 90%;
+  display: block;
+  transition: all .3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #52fde8; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+  .form__input::-wekit-input-placeholder {
+    color: #999; }
+
 .row {
   max-width: 130rem;
   margin: 0 auto; }
@@ -452,3 +475,17 @@ body {
 .stories-section {
   padding: 1rem 0;
   position: relative; }
+
+.booking-section {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #a4fbed, #00ffe2); }
+
+.booking {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url("../images/georgian-cuisine.jpg");
+  background-size: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  height: 50rem; }
+  .booking__form {
+    width: 50%;
+    padding: 3rem 6rem; }

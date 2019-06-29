@@ -31,3 +31,26 @@
   padding: 1rem 0;
   position: relative;
 }
+
+.booking-section {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $colour-primary-light, $colour-primary-dark);
+}
+
+.booking {
+  background-image: linear-gradient(105deg,
+                           rgba($colour-white, .7) 0%,
+                           rgba($colour-white, .7) 50%,
+                           transparent 50%,
+                           ),
+                    url("../images/georgian-cuisine.jpg");
+  background-size: 100%;
+  border-radius: $radius-medium;
+  box-shadow: 0 1.5rem 4rem rgba($colour-black, 0.15);
+  height: 50rem;
+
+    &__form {
+      width: 50%;
+      padding: 3rem 6rem;
+    }
+}
