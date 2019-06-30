@@ -1,6 +1,6 @@
 .footer {
     background-color: $colour-grey-dark-3;
-    padding: 5rem 0;
+    padding: 5rem;
     font-size: $default-font-size;
 
       &__logo-box {
@@ -10,10 +10,25 @@
       &__logo {
         width: 15rem;
         height: auto;
+        &:hover {
+          animation: moveInFromRight;
+          animation-duration: 3s;
+          cursor: pointer;
+        }
+      }
+
+      &__logo-name {
+
+        &:hover {
+          color: $colour-tertiary-light;
+          transform: skewY(2deg);
+        }
       }
 
       &__navigation {
-
+        border-top: 1px solid $colour-grey-dark;
+        padding-top: 2rem;
+        display: inline-block;
       }
 
       &__list {
@@ -33,15 +48,26 @@
           &:link,
           &:visited {
             color: $colour-grey-light;
+            background-color: $colour-grey-dark-3;
             text-decoration: none;
             text-transform: uppercase;
             display: inline-block;
+            transition: all .2s;
           }
 
           &:hover,
           &:active {
-            color: $colour-primary;
-            box-shadow: 0 1rem 2rem rgba($colour-black, .4)
+            color: $colour-tertiary-light;
+            box-shadow: 0 1rem 2rem rgba($colour-black, .4);
+            transform: rotate(3deg) scale(1.3);
           }
+      }
+
+      &__personal {
+        color: $colour-grey-light;
+        border-top: 1px solid $colour-grey-dark;
+        padding-top: 2rem;
+        width: 80%;
+        float: right;
       }
 }
