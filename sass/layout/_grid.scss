@@ -17,6 +17,10 @@
 
   }
 
+  .col-1-of-2 {
+    width: calc((100% - #{$horizontal-margin-large}) / 2);
+  }
+
   .col-1-of-6 {
     width: calc((100% - 5 * #{$horizontal-margin}) / 6);
     float: left;
@@ -25,10 +29,6 @@
       margin-right: $horizontal-margin;
     }
 
-  }
-
-  .col-1-of-2 {
-    width: calc((100% - #{$horizontal-margin-large}) / 2);
   }
 
   .col-1-of-3 {

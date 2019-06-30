@@ -33,7 +33,7 @@
   <main>
     <section class="about-section">
       <div class="u-centre-text u-margin-bottom-large">
-        <h2 class="secondary-heading">
+        <h2 class="secondary-heading--green">
           Travel and learn at the same time
         </h2>
       </div>
@@ -183,7 +183,7 @@
 
     <section class="faves-section">
       <div class="u-centre-text u-margin-bottom-medium">
-        <h2 class="secondary-heading">
+        <h2 class="secondary-heading--green">
           Most popular right now
         </h2>
       </div>
@@ -332,13 +332,12 @@
       <div class="background-video">
         <video class="background-video__content" autoplay muted loop>
           <source src="videos/palm-trees.mp4" type="video/mp4">
-          <source src="">
             Your Browser does not support this video.
         </video>
       </div>
 
       <div class="u-centre-text u-margin-bottom-large">
-        <h2 class="secondary-heading u-margin-top-large">
+        <h2 class="secondary-heading--green u-margin-top-large">
           From perplexed to expert
         </h2>
       </div>
@@ -401,7 +400,7 @@
                 action="#"
                 class="form">
                   <div class="u-centre-text u-margin-bottom-medium">
-                    <h2 class="secondary-heading">
+                    <h2 class="secondary-heading--orange">
                       Book now
                     </h2>
                   </div>
@@ -430,43 +429,128 @@
                       </label>
                     </div>
 
-                    <div class="form__details">
+                    <div class="form__details u-margin-bottom-medium">
                       <div class="form__radio-buttons">
-                        <input type="radio" class="form__radio-input" id="music"/>
-                        <label for="music" class="form__radio-label">Music tour</label>
+                        <input type="radio"
+                        class="form__radio-input"
+                        id="music"
+                        name="theme"
+                        />
+                        <label for="music" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                          Music tour
+                        </label>
                       </div>
                       <div class="form__radio-buttons">
-                        <input type="radio" class="form__radio-input" id="music"/>
-                        <label for="music" class="form__radio-label">Music tour</label>
+                        <input type="radio"
+                        class="form__radio-input"
+                        id="art"
+                        name="theme"
+                        />
+                        <label for="art" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                          Art / literature tour
+                        </label>
                       </div>
                       <div class="form__radio-buttons">
-                        <input type="radio" class="form__radio-input" id="art"/>
-                        <label for="music" class="form__radio-label">Art / literature tour</label>
+                        <input type="radio"
+                        class="form__radio-input"
+                        id="sports"
+                        name="theme"
+                        />
+                        <label for="sports" class="form__radio-label">
+                           <span class="form__radio-button"></span>
+                          Sports tour
+                        </label>
                       </div>
                       <div class="form__radio-buttons">
-                        <input type="radio" class="form__radio-input" id="sports"/>
-                        <label for="music" class="form__radio-label">Sports tour</label>
+                        <input
+                        type="radio"
+                        class="form__radio-input"
+                        id="dance"
+                        name="theme"
+                        />
+                        <label for="dance" class="form__radio-label">
+                           <span class="form__radio-button"></span>
+                          Dance tour
+                        </label>
                       </div>
                       <div class="form__radio-buttons">
-                        <input type="radio" class="form__radio-input" id="dance"/>
-                        <label for="music" class="form__radio-label">Dance tour</label>
+                        <input
+                        type="radio"
+                        class="form__radio-input"
+                        id="food"
+                        name="theme"
+                        />
+                        <label for="food" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                          Food / drink tour
+                        </label>
                       </div>
                       <div class="form__radio-buttons">
-                        <input type="radio" class="form__radio-input" id="food"/>
-                        <label for="music" class="form__radio-label">Food / Drink tour</label>
-                      </div>
-                      <div class="form__radio-buttons">
-                        <input type="radio" class="form__radio-input" id="languages"/>
-                        <label for="music" class="form__radio-label">Languages tour</label>
+                        <input
+                        type="radio"
+                        class="form__radio-input"
+                        id="languages"
+                        name="theme"
+                        />
+                        <label for="languages" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                          Languages tour
+                        </label>
                       </div>
                     </div>
+                    <form__details>
+                      <button class="button button--orange">
+                        Enquire now &rarr;
+                      </button>
+                    </form__details>
                 </form>
               </div>
           </div>
         </div>
     </section>
-
   </main>
+
+  <footer class="footer">
+    <div class="footer__logo-box">
+      <h2 class="footer__logo-name u-margin-bottom-small">Tours for the Perplexed</h2>
+      <img src="images/travel-large.png"
+      alt="Large Logo"
+      class="footer__logo u-margin-bottom-medium"
+      >
+
+
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Vacancies</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">T & C</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__personal">
+            Built by <a href="#" class="footer__link">Ruth Newman</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- <section class="test-grid">
 
