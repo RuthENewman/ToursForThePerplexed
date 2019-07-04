@@ -6,27 +6,24 @@
   left: 0;
   background-color: rgba($colour-black, .8);
   z-index: 300;
-  // opacity: 0;
-  // visibility: hidden;
-  // transition: all .3s;
 
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
-  }
 
-  &__content {
-    @include absoluteCentre;
-    width: 80%;
-    background-color: $colour-white;
-    box-shadow: 0 2rem 4rem rgba($colour-black, .2);
-    border-radius: $radius-large;
-    display: table;
-    overflow: hidden;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(.25);
-    transition: all .4s .2s;
-  }
+
+    &__content {
+      @include absoluteCentre;
+      width: 80%;
+      background-color: $colour-white;
+      box-shadow: 0 2rem 4rem rgba($colour-black, .2);
+      border-radius: $radius-large;
+      display: table;
+      overflow: hidden;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(.25);
+      transition: all .4s .2s;
+    }
 
   &__left {
     width: 43%;
@@ -94,4 +91,5 @@
     :hover {
       color: $colour-primary;
     }
+}
 }

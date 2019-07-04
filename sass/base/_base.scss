@@ -8,6 +8,10 @@
 
 html {
   font-size: 62.5%;
+
+  @include responsive-mobile {
+    font-size: 50%;
+  }
 }
 
 body {
