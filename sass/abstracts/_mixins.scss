@@ -36,26 +36,29 @@
 - portrait
 - landscape
 - large-screen
+
+1em = 16px;
+
 */
 
 @mixin responsive($breakpoint) {
   @if $breakpoint == mobile {
-      @media (max-width: 600px) {
+      @media (max-width: 37.5em) { // 600px
         @content
       };
   }
   @if $breakpoint == portrait {
-      @media (max-width: 900px) {
+      @media (max-width: 56.25em) { // 900px
         @content
       };
   }
   @if $breakpoint == landscape {
-      @media (max-width: 1200px) {
+      @media (max-width: 75em) { // 1200px
         @content
       };
   }
   @if $breakpoint == large-screen {
-      @media (min-width: 1800px) {
+      @media (min-width: 112.5em) {  // 1800px
         @content
       };
   }
