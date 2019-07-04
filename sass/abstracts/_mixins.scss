@@ -22,15 +22,6 @@
 900px - 1200px tablet (landscape)
 1800px+ large desktop
 
-*/
-
-@mixin responsive-mobile {
-  @media (max-width: 600px) {
-    @content
-  };
-}
-
-/*
  $breakpoint argument choices
 - mobile
 - portrait

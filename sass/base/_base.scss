@@ -7,27 +7,18 @@
 }
 
 html {
-  font-size: 62.5%;
-
-  @include responsive-mobile {
-    font-size: 50%;
-  }
-
-  @include responsive(mobile) {
-    font-size: 50%;
-  }
+  font-size: 62.5%; // 1rem = 10px, 10px / 16px = 62.5%
 
   @include responsive(portrait) {
-    font-size: 60%;
+    font-size: 50%; // 1rem = 8px, 8 / 16 = 50%
   }
 
   @include responsive(landscape) {
-    font-size: 70%;
+    font-size: 56.25%; // 1rem = 9px, 8 / 16 = 56.25%
   }
 
   @include responsive(large-screen) {
-    font-size: 80%;
-  }
+    font-size: 75%; // 1rem = 12px, 12 / 16 = 75%
 
 }
 
