@@ -12,6 +12,23 @@ html {
   @include responsive-mobile {
     font-size: 50%;
   }
+
+  @include responsive(mobile) {
+    font-size: 50%;
+  }
+
+  @include responsive(portrait) {
+    font-size: 60%;
+  }
+
+  @include responsive(landscape) {
+    font-size: 70%;
+  }
+
+  @include responsive(large-screen) {
+    font-size: 80%;
+  }
+
 }
 
 body {
