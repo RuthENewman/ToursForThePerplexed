@@ -1,6 +1,5 @@
 .navigation {
 
-        
         &__checkbox {
           display: none;
         }
@@ -17,6 +16,16 @@
           box-shadow: 0 1rem 3rem rgba($colour-black, .1);
           text-align: center;
           cursor: pointer;
+
+          @include responsive(portrait) {
+              top: 4rem;
+              right: 4rem;
+          }
+
+          @include responsive(mobile) {
+              top: 3rem;
+              right: 3rem;
+          }
         }
 
         &__background {
@@ -30,6 +39,15 @@
             z-index: 50;
             transition: transform .8s cubic-bezier(0.075, 0.82, 0.165, 1);
 
+            @include responsive(portrait) {
+                top: 4.5rem;
+                right: 4.5rem;
+            }
+
+            @include responsive(mobile) {
+                top: 3.5rem;
+                right: 3.5rem;
+            }
         }
 
        &__container {

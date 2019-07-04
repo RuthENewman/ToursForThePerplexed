@@ -3,6 +3,10 @@
     padding: 5rem;
     font-size: $default-font-size;
 
+    @include responsive(portrait) {
+      padding: 8rem 0;
+    }
+
       &__logo-box {
         text-align: center;
       }
@@ -29,6 +33,11 @@
         border-top: 1px solid $colour-grey-dark;
         padding-top: 2rem;
         display: inline-block;
+
+        @include responsive(mobile) {
+            width: 100%;
+            text-align: center;
+        }
       }
 
       &__list {
@@ -69,5 +78,10 @@
         padding-top: 2rem;
         width: 80%;
         float: right;
+
+        @include responsive(mobile) {
+            width: 80%;
+            float: none;
+        }
       }
 }
