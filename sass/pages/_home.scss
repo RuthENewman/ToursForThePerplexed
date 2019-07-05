@@ -2,6 +2,10 @@
   background-color: $colour-grey-light;
   padding: 20rem 10rem;
   margin-top: -20vh;
+
+  @include responsive(portrait) {
+    padding: 18rem 0;
+  }
 }
 
 .theme-section {
@@ -19,12 +23,20 @@
   & > * {
     transform: skewY(5deg);
   }
+
+  @include responsive(portrait) {
+    padding: 5rem 0;
+  }
 }
 
 .faves-section {
   background-color: $colour-grey-light;
   padding: 15rem 0 10rem 0;
   margin-top: -9rem;
+
+  @include responsive(portrait) {
+    padding: 13rem 0 8rem 0;
+  }
 }
 
 .stories-section {
@@ -35,6 +47,10 @@
 .booking-section {
   padding: 12rem 0;
   background-image: linear-gradient(to right bottom, $colour-primary-light, $colour-primary-dark);
+
+  @include responsive(portrait) {
+    padding: 7rem;
+  }
 }
 
 .booking {

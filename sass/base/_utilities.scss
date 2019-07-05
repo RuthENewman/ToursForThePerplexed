@@ -2,10 +2,18 @@
 
 .u-margin-bottom-large {
   margin-bottom: 8rem !important;
+
+  @include responsive(portrait) {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
+
+  @include responsive(portrait) {
+    margin-bottom: 3rem !important;
+  }
 }
 
 .u-margin-bottom-small {
