@@ -154,4 +154,44 @@
 
 
   }
+
+  @include responsive(portrait) {
+    height: auto;
+    .card {
+
+      &__side {
+        height: auto;
+        transition: all .8s ease;
+        position: relative;
+
+        &--back {
+          transform: rotateY(0);
+        }
+      }
+
+      &:hover &__side--front {
+        transform: rotateY(0);
+      }
+
+      &__similar {
+
+          &--details {
+            position: relative;
+
+            ul {
+              list-style: none;
+              position: absolute;
+              top: 3rem;
+              left: 4rem;
+
+                li {
+    
+                }
+            }
+
+        }
+
+
+      }
+  }
 }
