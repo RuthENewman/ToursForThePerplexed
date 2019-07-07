@@ -1,6 +1,10 @@
 .composition {
   position: relative;
 
+  @include responsive(mobile) {
+    margin: 5rem 1rem -1rem 3rem;
+  }
+
     &__photo {
       width: 55%;
       box-shadow: 0 1.5rem 4rem rgba($colour-black, .4);

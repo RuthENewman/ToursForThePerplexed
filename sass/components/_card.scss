@@ -157,6 +157,10 @@
 
   @include responsive(portrait) {
     height: auto;
+    border-radius: $radius-small;
+    background-color: $colour-white;
+    box-shadow: 0 1.5rem 4rem rgba($colour-black, .15);
+
     .card {
 
       &__side {
@@ -166,6 +170,7 @@
 
         &--back {
           transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%)
         }
       }
 
@@ -177,6 +182,11 @@
 
           &--details {
             position: relative;
+            top: 0%;
+            left: 0%;
+            transform: translate(0);
+            width: 100%;
+            padding: 7rem 4rem 4rem 4rem;
 
             ul {
               list-style: none;
@@ -185,7 +195,7 @@
               left: 4rem;
 
                 li {
-    
+
                 }
             }
 
@@ -193,5 +203,6 @@
 
 
       }
-  }
+}
+}
 }

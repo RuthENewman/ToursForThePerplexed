@@ -6,7 +6,7 @@
     margin-bottom: $vertical-margin;
 
     @include responsive(portrait) {
-      margin-right: $vertical-margin-small;
+      margin-right: 0;
     }
 
   }

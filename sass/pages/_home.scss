@@ -63,7 +63,15 @@
   background-size: 100%;
   border-radius: $radius-medium;
   box-shadow: 0 1.5rem 4rem rgba($colour-black, 0.15);
-  height: 60rem;
+
+  @include responsive(landscape) {
+    background-image: linear-gradient(105deg,
+                             rgba($colour-white, .9) 0%,
+                             rgba($colour-white, .9) 70%,
+                             transparent 70%,
+                             ),
+                      url("../images/chinesecalligraphy.jpg");
+  }
 
     &__form {
       width: 55%;

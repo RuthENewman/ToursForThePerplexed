@@ -133,7 +133,7 @@ body {
       font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .secondary-heading--green {
-      font-size: 2.5rem; } }
+      font-size: 2rem; } }
   .secondary-heading--green:hover {
     transform: skewY(-6deg) skewX(5deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -278,6 +278,9 @@ body {
 
 .composition {
   position: relative; }
+  @media (max-width: 37.5em) {
+    .composition {
+      margin: 5rem 1rem -1rem 3rem; } }
   .composition__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -441,6 +444,33 @@ body {
           text-align: left;
           font-size: 1.6rem;
           padding: .5rem; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 0.4rem;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card .card__side {
+        height: auto;
+        transition: all .8s ease;
+        position: relative; }
+        .card .card__side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+      .card .card:hover .card .card__side--front {
+        transform: rotateY(0); }
+      .card .card__similar--details {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+        .card .card__similar--details ul {
+          list-style: none;
+          position: absolute;
+          top: 3rem;
+          left: 4rem; } }
 
 .background-video {
   position: absolute;
@@ -465,6 +495,14 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 6rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -475,10 +513,16 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__image {
     height: 100%; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0); } }
 
 .form__details:not(:last-child) {
   margin-bottom: 2rem; }
@@ -634,7 +678,7 @@ body {
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
-        margin-right: 6rem; } }
+        margin-right: 0; } }
   @media (max-width: 56.25em) {
     .row {
       max-width: 70rem;
@@ -934,8 +978,10 @@ body {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 52%), url("../images/chinesecalligraphy.jpg");
   background-size: 100%;
   border-radius: 0.5rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  height: 60rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  @media (max-width: 75em) {
+    .booking {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url("../images/chinesecalligraphy.jpg"); } }
   .booking__form {
     width: 55%;
     padding: 3rem 4rem; }
