@@ -51,6 +51,10 @@
   @include responsive(portrait) {
     padding: 7rem;
   }
+
+  @include responsive(mobile) {
+    padding: 2rem;
+  }
 }
 
 .booking {
@@ -71,10 +75,27 @@
                              transparent 70%,
                              ),
                       url("../images/chinesecalligraphy.jpg");
+    background-size: cover;
+  }
+
+  @include responsive(portrait) {
+    background-image: linear-gradient(to right,
+                             rgba($colour-white, .9) 0%,
+                             rgba($colour-white, .9) 100%,
+                             ),
+                      url("../images/chinesecalligraphy.jpg");
   }
 
     &__form {
       width: 55%;
       padding: 3rem 4rem;
+
+      @include responsive(landscape) {
+        width: 70%;
+      }
+
+      @include responsive(portrait) {
+        width: 100%;
+      }
     }
 }
